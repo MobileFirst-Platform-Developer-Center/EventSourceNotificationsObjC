@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P6I-Un-EIZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P6I-Un-EIZ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,42 +20,40 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LRD-Df-GOk">
                                 <rect key="frame" x="51" y="112" width="219" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="219" id="rp2-EB-oEf"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTa-2l-3YG">
-                                <rect key="frame" x="125" y="167" width="70" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Jmd-N7-9cu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="121" y="150" width="78" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jPT-mm-cAr"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sU3-rj-V9i">
-                                <rect key="frame" x="51" y="61" width="219" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="219" id="cT3-NT-WQv"/>
-                                </constraints>
+                                <rect key="frame" x="51" y="74" width="219" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="kTa-2l-3YG" secondAttribute="centerX" id="7kq-Qt-Zl3"/>
-                            <constraint firstItem="kTa-2l-3YG" firstAttribute="top" secondItem="LRD-Df-GOk" secondAttribute="bottom" constant="25" id="ctX-g8-g4s"/>
-                            <constraint firstItem="LRD-Df-GOk" firstAttribute="top" secondItem="sU3-rj-V9i" secondAttribute="bottom" constant="21" id="e9i-Yd-eaE"/>
-                            <constraint firstAttribute="centerX" secondItem="sU3-rj-V9i" secondAttribute="centerX" id="eFh-XC-jeE"/>
-                            <constraint firstItem="sU3-rj-V9i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="q5v-bg-tt9"/>
-                            <constraint firstAttribute="centerX" secondItem="LRD-Df-GOk" secondAttribute="centerX" id="xwj-en-DBS"/>
+                            <constraint firstAttribute="centerX" secondItem="sU3-rj-V9i" secondAttribute="centerX" id="8Om-GB-n5s"/>
+                            <constraint firstAttribute="centerX" secondItem="LRD-Df-GOk" secondAttribute="centerX" id="9zi-vO-D6R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LRD-Df-GOk" secondAttribute="trailing" constant="34" id="Hok-El-ihv"/>
+                            <constraint firstItem="sU3-rj-V9i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="YoN-v9-hX3"/>
+                            <constraint firstItem="LRD-Df-GOk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="d1H-od-bWf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sU3-rj-V9i" secondAttribute="trailing" constant="34" id="doR-w6-Xgu"/>
+                            <constraint firstItem="LRD-Df-GOk" firstAttribute="top" secondItem="sU3-rj-V9i" secondAttribute="bottom" constant="8" id="hNl-Fc-a9M"/>
+                            <constraint firstItem="sU3-rj-V9i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="hRD-cr-MnO"/>
+                            <constraint firstItem="kTa-2l-3YG" firstAttribute="top" secondItem="LRD-Df-GOk" secondAttribute="bottom" constant="8" id="i3v-YR-9RD"/>
+                            <constraint firstAttribute="centerX" secondItem="kTa-2l-3YG" secondAttribute="centerX" id="jnP-4y-ury"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Event Source Notifications" id="Vtf-Rb-fsI"/>
@@ -68,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1261" y="184"/>
+            <point key="canvasLocation" x="1429.5" y="382"/>
         </scene>
         <!--Event Source Notifications-->
         <scene sceneID="ZB3-Di-cYk">
@@ -83,41 +81,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hh2-Gk-DVJ">
-                                <rect key="frame" x="28" y="72" width="264" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="31" y="92" width="259" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="isPushSupported?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
                                 <connections>
                                     <action selector="isPushSupported:" destination="YiI-Qx-zH9" eventType="touchUpInside" id="Hlv-Zw-Bmt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JI-D8-uuq">
-                                <rect key="frame" x="23" y="114" width="264" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="60" y="151" width="200" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="isSubscribed?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
                                 <connections>
                                     <action selector="isSubscribed:" destination="YiI-Qx-zH9" eventType="touchUpInside" id="GTb-bg-HnD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEP-Cq-Ypz">
-                                <rect key="frame" x="23" y="156" width="264" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="89" y="210" width="142" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Subscribe">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
                                 <connections>
                                     <action selector="subscribe:" destination="YiI-Qx-zH9" eventType="touchUpInside" id="ukZ-fT-x9S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7B-gf-09a">
-                                <rect key="frame" x="23" y="198" width="264" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="72" y="269" width="177" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Unsubscribe">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
                                 <connections>
                                     <action selector="unsubscribe:" destination="YiI-Qx-zH9" eventType="touchUpInside" id="48l-Er-cK9"/>
                                 </connections>
@@ -125,18 +135,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7JI-D8-uuq" firstAttribute="leading" secondItem="nCO-TI-eo9" secondAttribute="leadingMargin" constant="7" id="0AB-QA-Oa6"/>
-                            <constraint firstItem="d7B-gf-09a" firstAttribute="leading" secondItem="nCO-TI-eo9" secondAttribute="leadingMargin" constant="7" id="93e-Fl-363"/>
-                            <constraint firstItem="7JI-D8-uuq" firstAttribute="top" secondItem="hh2-Gk-DVJ" secondAttribute="bottom" constant="8" id="Bud-Yg-WEP"/>
-                            <constraint firstItem="d7B-gf-09a" firstAttribute="top" secondItem="DEP-Cq-Ypz" secondAttribute="bottom" constant="8" id="Kr1-lZ-YLs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="d7B-gf-09a" secondAttribute="trailing" constant="17" id="Tg2-2L-A1W"/>
-                            <constraint firstItem="hh2-Gk-DVJ" firstAttribute="top" secondItem="fTh-gl-urs" secondAttribute="bottom" constant="8" id="UKj-jM-TFT"/>
-                            <constraint firstItem="DEP-Cq-Ypz" firstAttribute="leading" secondItem="nCO-TI-eo9" secondAttribute="leadingMargin" constant="7" id="XEB-9N-VuO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hh2-Gk-DVJ" secondAttribute="trailing" constant="12" id="aUn-ms-8gQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7JI-D8-uuq" secondAttribute="trailing" constant="17" id="l0P-VI-lCK"/>
-                            <constraint firstItem="DEP-Cq-Ypz" firstAttribute="top" secondItem="7JI-D8-uuq" secondAttribute="bottom" constant="8" id="l1h-YD-kch"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DEP-Cq-Ypz" secondAttribute="trailing" constant="17" id="tVE-bW-nFG"/>
-                            <constraint firstItem="hh2-Gk-DVJ" firstAttribute="leading" secondItem="nCO-TI-eo9" secondAttribute="leadingMargin" constant="12" id="zFi-By-Ccg"/>
+                            <constraint firstAttribute="centerX" secondItem="hh2-Gk-DVJ" secondAttribute="centerX" id="32l-zr-nDx"/>
+                            <constraint firstItem="DEP-Cq-Ypz" firstAttribute="top" secondItem="7JI-D8-uuq" secondAttribute="bottom" constant="8" id="9ET-Qt-tEh"/>
+                            <constraint firstItem="d7B-gf-09a" firstAttribute="top" secondItem="DEP-Cq-Ypz" secondAttribute="bottom" constant="8" id="ELI-FN-hYj"/>
+                            <constraint firstAttribute="centerX" secondItem="7JI-D8-uuq" secondAttribute="centerX" id="KRa-ca-V4y"/>
+                            <constraint firstItem="7JI-D8-uuq" firstAttribute="top" secondItem="hh2-Gk-DVJ" secondAttribute="bottom" constant="8" id="NJi-UP-khm"/>
+                            <constraint firstItem="hh2-Gk-DVJ" firstAttribute="top" secondItem="fTh-gl-urs" secondAttribute="bottom" constant="28" id="NMh-6r-RMi"/>
+                            <constraint firstAttribute="centerX" secondItem="d7B-gf-09a" secondAttribute="centerX" id="ejJ-rf-hAo"/>
+                            <constraint firstAttribute="centerX" secondItem="DEP-Cq-Ypz" secondAttribute="centerX" id="jJv-m5-iyg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Event Source Notifications" id="C5R-0t-KJI"/>
@@ -147,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHZ-nm-oIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743" y="382"/>
+            <point key="canvasLocation" x="891" y="388"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cmR-Zj-nbc">
