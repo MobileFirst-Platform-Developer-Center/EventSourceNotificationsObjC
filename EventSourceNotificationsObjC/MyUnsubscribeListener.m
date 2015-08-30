@@ -21,21 +21,21 @@
 
 
 -(void) onSuccess:(WLResponse *)response{
-    UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:@"Unsubscribed successfully"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unsubscribed successfully"
                                                                    message: nil
                                                                   delegate:nil
                                                          cancelButtonTitle:@"OK"
                                                          otherButtonTitles:nil];
-    [adapterResponseAlert show];
+    [alert show];
 }
 
 -(void)onFailure:(WLFailResponse *)response{
-    UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:@"Failed to unsubscribe"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failed to unsubscribe"
                                                                    message: nil
                                                                   delegate:nil
                                                          cancelButtonTitle:@"OK"
                                                          otherButtonTitles:nil];
-    [adapterResponseAlert show];
+    [alert show];
 }
 
 @end

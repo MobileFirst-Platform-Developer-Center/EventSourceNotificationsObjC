@@ -16,7 +16,12 @@
 #import <Foundation/Foundation.h>
 #import "MainViewController.h"
 
-@interface ReadyToSubscribeListener : NSObject <WLOnReadyToSubscribeListener> 
+@interface ReadyToSubscribeListener : NSObject <WLOnReadyToSubscribeListener>{
+@private
+    MainViewController *vc;
+}
+
+- (id)initWithController:(MainViewController *)mainView;
 @property (nonatomic, strong)NSString *alias;
 @property (nonatomic, strong)NSString *adapterName;
 @property (nonatomic, strong)NSString *eventSourceName;

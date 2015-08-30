@@ -26,12 +26,12 @@
 
 -(void)onFailure:(WLFailResponse *)response{
     NSLog(@"\nConnection Failure: %@", response.errorMsg);
-    UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:@"Connection Failure"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Failure"
                                                                    message: response.errorMsg
                                                                   delegate:nil
                                                          cancelButtonTitle:@"OK"
                                                          otherButtonTitles:nil];
-    [adapterResponseAlert show];
+    [alert show];
 }
 
 @end

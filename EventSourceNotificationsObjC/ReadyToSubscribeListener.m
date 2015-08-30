@@ -19,17 +19,25 @@
 
 @implementation ReadyToSubscribeListener
 
+- (id)initWithController: (MainViewController *) mainView{
+    if ( self = [super init] )
+    {
+        vc = mainView;
+    }
+    return self;
+}
 
 -(void)OnReadyToSubscribe{
+    [vc enablePushOptions];
 	MyEventSourceListener *eventSourceListener=[[MyEventSourceListener alloc] init];
 	[[WLPush sharedInstance] registerEventSourceCallback:self.alias :self.adapterName
 														:self.eventSourceName :eventSourceListener];
-    UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:@"Ready to subscribe"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ready to subscribe"
                                                                    message: nil
                                                                   delegate:nil
                                                          cancelButtonTitle:@"OK"
                                                          otherButtonTitles:nil];
-    [adapterResponseAlert show];
+    [alert show];
 }
 
 @end

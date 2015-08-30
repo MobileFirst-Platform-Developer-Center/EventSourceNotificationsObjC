@@ -148,6 +148,8 @@
                     <navigationItem key="navigationItem" title="Event Source Notifications" id="C5R-0t-KJI"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="subscribeBtn" destination="DEP-Cq-Ypz" id="7ko-Au-Uh4"/>
+                        <outlet property="unsubscribeBtn" destination="d7B-gf-09a" id="Xsh-3Q-dd7"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="showLogin" id="v9y-FX-fSX"/>
                     </connections>
                 </viewController>

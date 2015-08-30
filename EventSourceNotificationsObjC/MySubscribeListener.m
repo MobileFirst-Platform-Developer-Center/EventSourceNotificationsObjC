@@ -19,21 +19,21 @@
 @implementation MySubscribeListener 
 
 -(void) onSuccess:(WLResponse *)response{
-    UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:@"Subscribed successfully"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Subscribed successfully"
                                                                    message: nil
                                                                   delegate:nil
                                                          cancelButtonTitle:@"OK"
                                                          otherButtonTitles:nil];
-    [adapterResponseAlert show];
+    [alert show];
 }
 
 -(void)onFailure:(WLFailResponse *)response{
-    UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:@"Failed to subscribe"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failed to subscribe"
                                                                    message: nil
                                                                   delegate:nil
                                                          cancelButtonTitle:@"OK"
                                                          otherButtonTitles:nil];
-    [adapterResponseAlert show];
+    [alert show];
 }
 
 @end

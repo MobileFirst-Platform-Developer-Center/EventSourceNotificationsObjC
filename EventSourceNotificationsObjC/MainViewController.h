@@ -20,8 +20,12 @@
 
 @interface MainViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *subscribeBtn;
+@property (weak, nonatomic) IBOutlet UIButton *unsubscribeBtn;
+
 @property (nonatomic, strong)WLPush *wlpush;
 @property (nonatomic, strong)NSString *alias;
 
+- (void)enablePushOptions;
 
 @end

@@ -45,12 +45,12 @@
         dispatch_async(dispatch_get_main_queue(), ^(void){
             LoginViewController*  loginController = (LoginViewController*) self.vc.navigationController.visibleViewController;
             [loginController.loginBtn setEnabled:YES];
-            UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:@"Please try again"
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Please try again"
                                                                            message: nil
                                                                           delegate:nil
                                                                  cancelButtonTitle:@"OK"
                                                                  otherButtonTitles:nil];
-            [adapterResponseAlert show];
+            [alert show];
         });
     }
     else{

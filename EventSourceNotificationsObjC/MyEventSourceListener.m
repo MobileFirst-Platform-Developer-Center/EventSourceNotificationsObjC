@@ -21,12 +21,12 @@
 -(void)onReceive:(NSString *)props :(NSString *)payload{
     
     
-    UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:props.description
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:props.description
                                                                    message: payload.description
                                                                   delegate:nil
                                                          cancelButtonTitle:@"OK"
                                                          otherButtonTitles:nil];
-    [adapterResponseAlert show];
+    [alert show];
 }
 
 @end

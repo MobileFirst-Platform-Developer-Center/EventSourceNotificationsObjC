@@ -30,15 +30,19 @@
 
 @implementation MainViewController
 
-
+@synthesize subscribeBtn=_subscribeBtn;
+@synthesize unsubscribeBtn=_unsubscribeBtn;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.subscribeBtn.enabled=false;
+    self.unsubscribeBtn.enabled=false;
+    
     self.wlpush = [[WLPush sharedInstance] init];
     self.alias = @"iOSPushAlias";
     
-    ReadyToSubscribeListener *readyToSubscribeListener = [[ReadyToSubscribeListener alloc] init];
+    ReadyToSubscribeListener *readyToSubscribeListener = [[ReadyToSubscribeListener alloc] initWithController:self];
     readyToSubscribeListener.alias = self.alias;
     readyToSubscribeListener.adapterName = @"PushAdapter";
     readyToSubscribeListener.eventSourceName = @"PushEventSource";
@@ -79,36 +83,34 @@
 
 
 - (void)alertTrue{
-    UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:@"true"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"true"
                                                                    message: nil
                                                                   delegate:nil
                                                          cancelButtonTitle:@"OK"
                                                          otherButtonTitles:nil];
-    [adapterResponseAlert show];
+    [alert show];
 }
 
 - (void) alertFalse{
-    UIAlertView *adapterResponseAlert = [[UIAlertView alloc] initWithTitle:@"false"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"false"
                                                                    message: nil
                                                                   delegate:nil
                                                          cancelButtonTitle:@"OK"
                                                          otherButtonTitles:nil];
-    [adapterResponseAlert show];
+    [alert show];
 }
+
+- (void)enablePushOptions{
+    self.subscribeBtn.enabled=true;
+    self.unsubscribeBtn.enabled=true;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
